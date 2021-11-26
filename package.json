@@ -1,0 +1,19 @@
+{
+  "name": "sse-server",
+  "version": "1.0.0",
+  "description": "sse server for take home project in LaunchDarkly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/launchdarkly/be-coding-test-Kai-Feng.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/launchdarkly/be-coding-test-Kai-Feng/issues"
+  },
+  "homepage": "https://github.com/launchdarkly/be-coding-test-Kai-Feng#readme"
+}
