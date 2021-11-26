@@ -7,8 +7,9 @@ const getStudentsById = async (sid) => {
 
         let scores = studentsById.map( s => s.score);
         let avg = scores.reduce((pre, cur) => pre + cur, 0) / scores.length;
+
         let payload = {
-            all_exams : studentsById,
+            exams : studentsById,
             average_score : avg
         }
 
