@@ -1,5 +1,26 @@
+# SSE Server
+
+This is a Server Side Eventing service for take-home project
+
+## Install
+
+    $ git clone https://github.com/launchdarkly/be-coding-test-Kai-Feng.git
+    $ cd be-coding-test-Kai-Feng
+    $ npm install
+
+## Running the project
+
+    $ npm start
+
 ## Coding test
 
+    $ npm test
+
+## API Usage
+
+
+
+## Project requirements
 
 At `http://live-test-scores.herokuapp.com/scores` you'll find a service that follows the [Server-Sent Events](https://www.w3.org/TR/2015/REC-eventsource-20150203/) protocol. You can connect to the service using cURL:
 
