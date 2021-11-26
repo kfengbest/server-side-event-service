@@ -1,10 +1,8 @@
+const db = require('../db');
 
 const getExamsById = async (examId) => {
     try {
-        let studentsById = [
-            {"exam": 3, "studentId": "foo", score: .991},
-            {"exam": 4, "studentId": "foo", score: .992}
-        ]
+        let studentsById = db.students.filter( s => s.exam === examId );
     
         let scores = studentsById.map( s => s.score);
         let avg = scores.reduce((pre, cur) => pre + cur, 0) / scores.length;
@@ -21,7 +19,7 @@ const getExamsById = async (examId) => {
 }
 
 const getExams = async () => {
-    const exams = ["1","2","3"];
+    const exams = [...db.exams];
     
     let payload = {
         all_exams: exams
