@@ -6,11 +6,7 @@ const port = 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/api', routes)
-
-app.get('/', (req, res) => {
-    res.send('sse server is running');
-});
+app.use('/', routes)
 
 app.listen(port, () => {
     console.log(`Listening on port => ${port}`);

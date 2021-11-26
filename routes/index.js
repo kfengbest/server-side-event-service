@@ -1,12 +1,13 @@
 const express = require('express');
 const students = require('../controllers/students.ctrl');
+const exams = require('../controllers/exams.ctrl');
 
 const router = express.Router();
 
 router.get('/students', students.getStudents);
 router.get('/students/:id', students.getStudentsById);
 
-router.get('/exams', (req, res) => res.send("get /exams"));
-router.get('/exams/:number', (req, res) => res.send("get /exams/:number"));
+router.get('/exams', exams.getExams);
+router.get('/exams/:number', exams.getExamsByNumber);
 
 module.exports = router;
