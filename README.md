@@ -18,7 +18,21 @@ This is a Server Side Eventing service for take-home project
 
 ## API Usage
 
+`/students` that lists all users that have received at least one test score
 
+    $ curl GET 'http://localhost:3000/students'
+
+`/students/{id}` that lists the test results for the specified student, and provides the student's average score across all exams
+
+    $ curl GET 'http://localhost:3000/students/foo'
+
+`/exams` that lists all the exams that have been recorded
+
+    $ curl GET 'http://localhost:3000/exams'
+
+`/exams/{number}` that lists all the results for the specified exam, and provides the average score across all students
+
+    $ curl GET 'http://localhost:3000/exams/1'
 
 ## Project requirements
 
