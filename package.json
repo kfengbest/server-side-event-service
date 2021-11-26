@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/launchdarkly/be-coding-test-Kai-Feng/issues"
   },
-  "homepage": "https://github.com/launchdarkly/be-coding-test-Kai-Feng#readme"
+  "homepage": "https://github.com/launchdarkly/be-coding-test-Kai-Feng#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }
