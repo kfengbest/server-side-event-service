@@ -1,8 +1,10 @@
 var EventSource = require('eventsource')
 const db = require('../db')
+const config = require('config');
+const sseUrl = config.get('sse.url');
 
 let start = () => {
-    var es = new EventSource('https://live-test-scores.herokuapp.com/scores')
+    var es = new EventSource(sseUrl)
 
     es.addEventListener('score', function (e) {
         console.log(e.data);

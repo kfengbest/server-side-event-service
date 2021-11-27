@@ -1,0 +1,9 @@
+{
+    "server": {
+        "host": "localhost",
+        "port": 3000
+    },
+    "sse" : {
+        "url" : "https://live-test-scores.herokuapp.com/scores"
+    }
+}
