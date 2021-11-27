@@ -22,8 +22,8 @@ const getStudentsById = async (sid) => {
 
 const getStudents = async () => {
     
-    let students = db.students;
-
+    let students = db.students.filter( s => s.score && s.score > 0 );
+    
     return students;
 } 
 
