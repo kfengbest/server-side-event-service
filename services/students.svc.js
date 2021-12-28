@@ -1,4 +1,13 @@
 const db = require('../db');
+const fetch = require('node-fetch');
+
+
+const createStudent = async (student) => {
+    
+    db.students.push(student);
+
+    return student;
+}
 
 const getStudentsById = async (sid) => {
     try {
@@ -27,7 +36,18 @@ const getStudents = async () => {
     return students;
 } 
 
+const getRepos = async (userId) => {
+
+    let url = `https://api.github.com/users/${userId}/repos`;
+    let res = await fetch(url);
+    let repos = await res.json();
+    return repos;
+
+}
+
 module.exports = {
     getStudents,
-    getStudentsById
+    getStudentsById,
+    createStudent,
+    getRepos
 }
